@@ -10,7 +10,7 @@ function myFrameWork(el) {
 
 	element.addClass = function(...args) {
 		args.forEach((className)=> {
-            	classes.add(className);
+            classes.add(className);
         })
 	}
 

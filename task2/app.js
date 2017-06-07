@@ -10,13 +10,13 @@ function myFrameWork(el) {
 
 	element.addClass = function(...args) {
 		args.forEach((className)=> {
-            classes.add(className);
+                        classes.add(className);
         })
 	}
 
 	element.removeClass = function(...args) {
 		args.forEach((className)=> {
-            classes.remove(className);
+                        classes.remove(className);
         })
 	}
 
@@ -42,7 +42,7 @@ function myFrameWork(el) {
 	}
 
 	element.clearAllClasses = function() {
-			element.className = "";
+		element.className = "";
 	}
 
 	element.toggle = function (...args) {

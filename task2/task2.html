@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Пример веб-страницы</title>
+  <script src='./app.js'></script>
+ </head>
+ <body>
+    <div id='test' class="test1 test2 test3 test4"></div>
+
+  <script>
+
+  foobar = myFrameWork('#test').getAllClasses();
+  console.log(foobar);
+
+  myFrameWork('#test').addClass('foo','bar', 'moo', 'bar');
+  foobar = myFrameWork('#test').getAllClasses();
+  console.log(foobar);
+
+  myFrameWork('#test').reNameClass('test3', 'foo3', 'test4', 'bar4');
+  foobar = myFrameWork('#test').getAllClasses();
+  console.log(foobar);
+
+  myFrameWork('#test').removeClass('foo3');
+  foobar = myFrameWork('#test').getAllClasses();
+  console.log(foobar);
+
+  myFrameWork('#test').toggle('qwe');
+  foobar = myFrameWork('#test').getAllClasses();
+  console.log(foobar);
+
+  myFrameWork('#test').clearAllClasses();
+  foobar = myFrameWork('#test').getAllClasses();
+  console.log(foobar);
+
+  </script>
+ </body>
+</html>
